@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#06110b">
+<meta name="color-scheme" content="dark">
+<title>KickerArena</title>
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/style.css">
+<script>window.KA_PAGES={version:"1.9.3"};</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="0 0 100 100">
+ <defs>
+  <radialGradient id="lg-bg" cx=".5" cy=".35" r=".7"><stop offset="0" stop-color="#2a8c47"/><stop offset="1" stop-color="#0b3b1c"/></radialGradient>
+  <linearGradient id="lg-ring" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1b8"/><stop offset=".5" stop-color="#ffc83d"/><stop offset="1" stop-color="#b87400"/></linearGradient>
+  <radialGradient id="lg-ball" cx=".38" cy=".3" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".7" stop-color="#e8e8e8"/><stop offset="1" stop-color="#9a9a9a"/></radialGradient>
+  <linearGradient id="lg-rod" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#7b8287"/><stop offset=".5" stop-color="#f5f7f8"/><stop offset="1" stop-color="#5d6366"/></linearGradient>
+  <clipPath id="lg-clip"><circle cx="50" cy="52" r="30"/></clipPath>
+ </defs>
+ <circle cx="50" cy="50" r="48" fill="url(#lg-ring)"/>
+ <circle cx="50" cy="50" r="43" fill="url(#lg-bg)"/>
+ <path d="M14,50 H86" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+ <circle cx="50" cy="50" r="14" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+ <rect x="3" y="20" width="94" height="5" rx="2.5" fill="url(#lg-rod)"/>
+ <rect x="20" y="13" width="10" height="20" rx="5" fill="#141518" stroke="#9aa2ad" stroke-width="1"/>
+ <rect x="70" y="13" width="10" height="20" rx="5" fill="#f6f2ea" stroke="#8a8272" stroke-width="1"/>
+ <ellipse cx="53" cy="86" rx="24" ry="5" fill="rgba(0,0,0,.35)"/>
+ <circle cx="50" cy="52" r="30" fill="url(#lg-ball)" stroke="#1b1b1b" stroke-width="1.6"/>
+ <g clip-path="url(#lg-clip)" fill="#1b1b1b">
+  <polygon points="50.00,42.00 59.51,48.91 55.88,60.09 44.12,60.09 40.49,48.91"/>
+  <polygon points="74.10,18.83 77.73,30.01 68.22,36.92 58.71,30.01 62.34,18.83"/><polygon points="88.99,64.67 79.48,71.58 69.97,64.67 73.60,53.49 85.36,53.49"/><polygon points="50.00,93.00 40.49,86.09 44.12,74.91 55.88,74.91 59.51,86.09"/><polygon points="11.01,64.67 14.64,53.49 26.40,53.49 30.03,64.67 20.52,71.58"/><polygon points="25.90,18.83 37.66,18.83 41.29,30.01 31.78,36.92 22.27,30.01"/>
+  <path d="M50.00,42.00L50.00,32.00M50.00,32.00L36.48,33.39M50.00,32.00L63.52,33.39M59.51,48.91L69.02,45.82M69.02,45.82L63.52,33.39M69.02,45.82L71.87,59.11M55.88,60.09L61.76,68.18M61.76,68.18L71.87,59.11M61.76,68.18L50.00,75.00M44.12,60.09L38.24,68.18M38.24,68.18L50.00,75.00M38.24,68.18L28.13,59.11M40.49,48.91L30.98,45.82M30.98,45.82L28.13,59.11M30.98,45.82L36.48,33.39" stroke="#1b1b1b" stroke-width="1.6" fill="none"/>
+ </g>
+ <circle cx="50" cy="52" r="30" fill="none" stroke="#1b1b1b" stroke-width="1.6"/>
+ <ellipse cx="40" cy="36" rx="9" ry="5" fill="rgba(255,255,255,.55)" transform="rotate(-30 40 36)"/>
+</symbol></svg>
+<header class="top" id="top"></header>
+<main id="view"></main>
+<div id="toasts"></div>
+<div id="fx"></div>
+<canvas id="confetti"></canvas>
+<noscript><p style="padding:40px;text-align:center">KickerArena heeft JavaScript nodig.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
